@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header >
+        <nav class="flex  justify-between mx-10" >
+
+            <ul class="flex  mt-10 ">
+                
+                <li >
+                    <div  class="w-10 h-10 bg-blue-500 mx-3 rounded-full border-2 border-blue-400" style =" background:linear-gradient(white 40%,rgb(0, 128, 255) 50%);"></div>
+                </li>
+                <li class="mx-4"><a class="text-lg" href="#">Tax<span class="text-blue-500 font-bold text-lg">pal</span></a></li>
+                <li class="mx-4"><a  class="text-lg text-slate-500"  href="#">Features</a></li>
+                <li class="mx-4"><a  class="text-lg text-slate-500"  href="#">Testimonal</a></li>
+                <li class="mx-4"><a  class="text-lg text-slate-500"  href="#">pricing</a></li>
+            
+            </ul>
+
+                <ul class="flex  mt-10 ">
+                    <li class="mx-4"><button class=" md:block hidden p-2 " type="submitt">Sign In</button></li>
+                    <li class="mx-4"><button class=" bg-blue-500 max-w-lg p-2 md:block hidden rounded-full text-white font-semibold" type="submitt">Get started today</button></li>
+                 
+                    <li class=""><a href="#" class=" text-3xl md:hidden block " class="mb-4">&#8801;</a></li>
+                </ul>
+               
+            
+
+            
+        </nav>
+    </header>
+    <article class="mt-24 flex flex-col justify-center items-center text-center">
+        <h1 class="text-6xl font-bold">
+            Accounting <span class="text-blue-500">made simple</span>
+           <br> for small Businesses
+        </h1>
+        <p class="mt-10  text-lg">Most bookkeeping software is accurate, but hard to use.
+            <br>We make the opposite trade off, and hope you dont get audited
+        </p>
+        <div >
+            <ul class="flex mt-10">
+
+                <li ><button class=" mx-4 p-3 bg-black rounded-full text-white text-center" type="submitt">Get 6 Month of free</button></li>
+                <li class="border-2 border-slate-200 p-2 rounded-full"><button class=" mx-4 " type="submitt"><i class="fa-solid fa-play mx-2"></i>Watch video</button></li>
+ 
+            </ul>
+
+        </div>
+    </article>
+    <footer class="flex flex-col flex-wrap justify-center items-center text-center mt-10">
+        <p>Trusted by these six companies so far</p>
+        <ul class="flex mt-6">
+            <li class="mx-4"><a  href=""><img src="transistor.7274e6c3.svg" /></a></li>
+            <li class="mx-4"><a href=""><img src="tuple.74eb0ae0.svg" /></a></li>
+            <li class="mx-4"><a href=""><img src="statickit.d7937794.svg" /></a></li>
+            <li class="mx-4"><a href=""><img src="mirage.18d2ec4e.svg" /></a></li>
+            <li  class="mx-4"><a href=""><img src="laravel.7deed17e.svg" /></a></li>
+            <li class="mx-4"><a href=""><img src="statamic.6da5ebfb.svg" /></a></li>
+
+        </ul>
+    </footer>
+
+    <div id="" class="mt-10">
+        <div class="relative  ">
+            <div>
+                <img class="max-w-full h-auto " src="background-features.5f7a9ac9.jpg" alt="Background Image"/>
+                <img class=" w-full md:h-48  h-full" src="background-features.5f7a9ac9.jpg" alt="Background Image"/>
+                
+            </div>
+            
+            <!-- Centered text and content -->
+            <div class="absolute md:mt-10 mt-10 top-0 left-0 w-full h-full  flex flex-col md:justify-center md:items-center md:text-center">
+                <h1 class="text-white  font-bold text-2xl md:text-4xl ">Everything you need to run your books.</h1> 
+                <p class="text-gray-400 md:text-2xl mt-2 ml-3">Well, everything you need if you aren’t that picky about minor details like tax compliance.</p>
+                
+        <div class="mt-4   mx-6  ">
+                <div class=" md:flex  ">
+                    <div class="  sm:mt-4 bg-indigo-200 max-w-full bg-opacity-10 sm:rounded-xl h-full  ">
+                        <div class="md:flex md:flex-col grid grid-cols-4 gap-2 mt-6">
+                            <div   class=" max-w-full md:h-24  hover:bg-blue-400 bg-opacity-1 hover:rounded-xl " class="btn">
+                                <button id = "payroll"  class="text-white font-bold text-xl ">
+                                    
+                                    PayRoll</button>
+                                <p class="hidden md:block"> Keep track of everyone's salaries and wether or not they've been paid.
+                                    Direct deposit not supported
+                                </p>
+                            </div>
+                            <div  class="max-w-full md:h-24  hover:bg-blue-400 hover:bg-opacity-1 hover:rounded-xl"  class="btn" >
+                        <button  id ="claim"  class="text-white font-bold text-xl ">
+                           
+                        
+                            Claim expenses</button>
+                        <p class="hidden md:block">Keep track of everyone's salaries and wether or not they've been paid.
+                            Direct deposit not supported
+                        </p>
+                    </div>
+                    <div  class="w-full md:h-24 hover:bg-blue-400 hover:bg-opacity-1 hover:rounded-xl " class="btn">
+                        <button id="vatHandling"  class="text-white font-bold text-xl">
+                            
+                            VAT handling  </button>
+                        <p class="hidden md:block">Keep track of everyone's salaries and wether or not they've been paid.
+                            Direct deposit not supported
+                        </p>
+                    </div>
+                    <div  class="w-full md:h-24 hover:bg-blue-400 hover:bg-opacity-1 hover:rounded-xl"  class="btn">
+                        <button  id="reporting" class="text-white font-bold text-xl">Reporting</button>
+                        <p class="hidden md:block">Keep track of everyone's salaries and wether or not they've been paid.
+                            Direct deposit not supported
+                        </p>
+                    </div>
+                     </div>
+                   <p class="text-center mt-2  md:hidden block">All of your receipts organized into one place, as long as you don't mind typing in the data by hand.</p>
+
+                    
+</div>
+            
+                
+                    <div class=" " >
+                        
+                        
+                        <img  id="image"   class="md:max-w-full md:h-full md:w-full max-w-full float-right  rounded-xl  " class="image" src="payroll.webp"/>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="flex flex-col justify-center align-center items-center">
+            <div class="text-center mt-20 ">
+            <p class="text-black  font-bold text-4xl">Simplify everyday business tasks.</p>
+            <p class="mt-4 text-gray-500">Because you’d probably be a little confused if we suggested <br>
+                you complicate your everyday business tasks instead.</p>
+           </div>
+        </div>
+         <div class="mt-20 mx-10 " >
+          <div class=" block md:flex justify-evenly  " >
+            <div  id= "reporting" class="w-full h-full cursor-pointer mx-4 my-4" >
+                <svg  class= "w-14 h-7 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 80c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-352zM0 272c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 160c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48L0 272zM368 96l32 0c26.5 0 48 21.5 48 48l0 288c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48z"/></svg>
+                <p  class="mt-4 text-sm "    id="click">Reporting</p>
+                <p class="mt-4 font-semibold  text-lg">Stay on the top of things with always 
+                    up-to-date reporting features</p>
+                <p class="mt-4 text-slate-500">"This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional." </p>
+                 <div class="bg-slate-400 w-full rounded-xl">
+                <img class="mt-4 m-10 p-4 rounded-lg md:hidden block"src="image (9).webp"/>
+            </div>
+            </div>
+            <div  class="w-full h-full cursor-pointer mx-4 my-4">
+                <svg  class= "w-12 h-7 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                <p class="mt-4 text-sm" class="click">Inventory</p>
+                <p class="mt-4 font-semibold text-lg">Never loose track of what's in stock  
+                    with accurate inventory tracking</p>
+                <p class="mt-4 text-slate-500">We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity."</p>
+                <div class="bg-slate-400 w-full rounded-xl">
+                    <img class="mt-4 m-10 p-4 rounded-lg md:hidden block"src="image (9).webp"/>
+                </div>
+            </div>
+            <div class="w-full h-full cursor-pointer mx-4 my-4">
+                <svg  class= "w-12 h-7"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64l0 384c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L96 0zM208 288l64 0c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16s16-7.2 16-16l0-64zM496 192c-8.8 0-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16s16-7.2 16-16l0-64c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16s16-7.2 16-16l0-64z"/></svg>
+                <p class="mt-4 text-sm" class="click">Contacts</p>
+                <p class="mt-4 font-semibold text-lg">Organize all of your contacts, service providers, and invoices in one place.</p>
+                <p class="mt-4 text-slate-500">"We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity." </p>
+                <div class="bg-slate-400 w-full rounded-xl">
+                    <img class="mt-4 m-10 p-4 rounded-lg md:hidden block"src="image (9).webp"/>
+                </div>
+            </div>
+            
+        </div>
+        
+            <div class=" mt-10 flex bg-slate-400 h-auto  md:overflow-hidden rounded-xl  w-full items-center justify-evenly align-center " id="dom">
+                <img class="max-w-3xl h-80 rounded-xl  hidden md:block  p-4"src="image (9).webp"/>
+                <img class=" max-w-3xl h-80   rounded-xl  hidden md:block  p-4"src="image (9).webp"/>
+                <img class="  max-w-3xl h-80  rounded-xl  hidden md:block  p-4"src="image (9).webp"/>
+            </div>
+          
+   
+    </div>
+</div>
+
+
+<div class="mt-28">
+    <div class="relative">
+        <div>
+          <img class="h-auto"  src="background-call-to-action.6a5a5672.jpg"/>
+        </div>
+        <div class="absolute  top-0 left-0 w-full h-full  flex flex-col justify-center items-center text-center">
+            
+        <h2 class="font-bold text-4xl text-white">Get started today</h2>
+            <p  class=" mt-4 text-white">It’s time to take control of your books. <br>
+                Buy our software so you can feel like you’re doing something productive.</p>
+            <div class="mt-10 bg-slate-100 p-4 rounded-full">
+              <button class="font-semibold">Get 6 months free</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div>
+    <div class="flex flex-col md:justify-center md:align-center  ">
+        <div class="text-center mt-20 ">
+        <p class="text-black  font-bold text-4xl">Loved by businesses worldwide.</p>
+        <p class="mt-4 text-gray-500">Our software is so simple that people can’t help but fall in love with it. Simplicity is easy<br>
+             when you just skip tons of mission-critical features.</p>
+       </div>
+    </div>
+
+    <div class="mt-20 ">
+        <div class=" md:grid md:grid-cols-3 md:gap-y-6 md:justify-evenly my-10 mx-6 block  items-center">
+        <div class="h-auto max-w-xl  m-4 p-6  bg-slate-100 rounded-2xl shadow-lg shadow-slate-500">
+           <p>TaxPal is so easy to use I can’t help but wonder <br>
+            if it’s really doing the things the government expects me to do</p> 
+           <hr class="w-auto mt-10">
+
+           
+           <div class="mt-4 flex justify-between">
+            <div >
+            <p>Sheryl Berge</p>
+            <p> CEO at Lynch LLC</p>
+        </div>
+        <img class="rounded-full w-20" src="image (10).webp"/>
+           </div>
+          
+    </div>
+      
+     <div class=" h-auto max-w-xl m-4 p-6  bg-slate-100 rounded-2xl shadow-lg shadow-slate-500">
+           <p>The best part about TaxPal is every time I pay my employees, 
+            my bank balance doesn’t go down like it used to. Looking forward to spending this 
+            extra cash when I figure out why my card is being declined.</p> 
+           <hr class="w-auto mt-10">
+           <div class="mt-4 flex justify-between">
+            <div >
+            <p>Amy Hahn</p>
+            <p> Director at Velocity Industries</p>
+        </div>
+            <img class="rounded-full w-20" src="image (11).webp"/>
+           </div>
+    </div>
+       <div class="h-auto max-w-xl  p-6  bg-slate-100 rounded-2xl shadow-lg shadow-slate-500">
+           <p>I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though</p>       
+              <hr class="w-auto mt-10">
+              <div class="mt-4 flex justify-between">
+                <div>
+                <p>Leland Kiehn</p>
+                <p> Founder of Kiehn and Sons</p>
+            </div>
+            <img class="rounded-full w-20" src="image (12).webp"/>
+               </div>
+    </div>
+       <div class=" h-auto  max-w-xl m-4 p-6  bg-slate-100 rounded-2xl shadow-lg shadow-slate-500">
+           <p>I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they 
+            are saying it has something to do with my books. Please get back to me right away.</p> 
+           <hr class="w-auto mt-10">
+           <div class="mt-4 flex justify-between">
+            <div>
+            <p>Erin Powlowski</p>
+            <p> COO at Armstrong Inc</p>
+        </div>
+        <img class="rounded-full w-20" src="image (13).webp"/>
+           </div>
+    </div>
+    <div class=" h-auto  max-w-xl m-4 p-6  bg-slate-100 rounded-2xl  shadow-lg shadow-slate-500">
+        <p>There are so many things I had to do with my old software that I just don’t do at all with TaxPal. 
+            Suspicious but I can’t say I don’t love it.</p> 
+        <hr class="w-auto mt-10">
+        <div class="mt-4 flex justify-between">
+            <div>
+            <p>Peter Renolds</p>
+            <p>Founder of West Inc</p>
+        </div>
+        <img class="rounded-full w-20" src="image (14).webp"/>
+           </div>
+ </div>
+ <div class=" h-auto max-w-xl m-4 p-6  bg-slate-100 rounded-2xl shadow-lg shadow-slate-500">
+    <p>This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. 
+        Please answer your damn emails, this is important.</p> 
+    <hr class="w-auto mt-10 ">
+    <div class="mt-4 flex justify-between">
+        <div>
+        <p>Amy Hahn</p>
+        <p> Director at Velocity Industries</p>
+    </div>
+    <img class="rounded-full w-20" src="image (11).webp"/>
+       </div>
+</div>
+      </div>
+
+<div>
+      <div class="flex flex-col md:justify-center md:align-center w-full h-auto bg-slate-900 ">
+        <div class="text-center mt-20 ">
+        <p class="text-white mt-24  font-bold text-4xl">Simple pricing, for everyone.</p>
+        <p class="mt-4 text-gray-500">It doesn’t matter what size your business is, our software won’t work well for you.</p>
+       </div>
+       <div class="md:flex justify-evenly md:my-10 md:mx-4">
+       <div class=" h-auto max-w-xl m-4 p-6  ">
+    <p class="text-white font-lg text-4xl">$15</p> 
+    <p class="mt-4 text-white">Small business
+</p>
+<p class="mt-2 text-white">Perfect for small / medium sized businesses.</p>
+    <div class="flex justify-center items-center text-center max-w-lg text-white border-2 border-slate-600  p-3 font-semibold mt-4 rounded-full ">
+        <button >Get started</button>
+    </div>
+
+    <div class="flex mt-4 text-white">
+        <svg class= "w-10 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p>Send 25 quotes and invoices</p>
+           
+        </div>
+        <div class="flex text-white">
+            <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <p>Connect up to 5 bank accounts</p>
+        </div>
+        <div class="flex text-white">
+<svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+<p>Track up to 50 expenses per month</p>
+</div>
+<div class="flex text-white">
+<svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+<p>Automated payroll support</p>
+</div>
+<div class="flex text-white">
+<svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+<p>Export up to 12 reports</p>
+</div>
+<div class="flex text-white">
+    <svg class= "w-10 h-6 "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+<p>Bulk reconcile transactions</p>
+</div>
+<div class="flex text-white">
+    <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p>Track in multiple currencies</p>
+</div >
+<div class="flex text-white">
+<svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p> Director at Velocity Industries</p>
+    
+       </div>
+       </div>
+
+       <div class=" h-auto max-w-xl m-4 p-6  bg-blue-400 rounded-2xl ">
+        <p class="text-white font-lg text-4xl">$9</p> 
+        <p class="text-white mt-4">Starter
+    </p>
+    <p class="text-white mt-2">Good for anyone who is self-employed and just getting started.</p>
+        <div>
+            <button  class="flex justify-center items-center text-center  w-full bg-white p-3 font-semibold mt-4 rounded-full ">Get started</button>
+        </div>
+    
+        <div class="flex text-white mt-4">
+            <svg class= "w-10 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <p>Send 25 quotes and invoices</p>
+               
+            </div>
+            <div class="flex text-white">
+                <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                <p>Connect up to 5 bank accounts</p>
+            </div>
+            <div class="flex text-white">
+    <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p>Track up to 50 expenses per month</p>
+    </div>
+    <div class="flex text-white">
+    <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p>Automated payroll support</p>
+    </div>
+    <div class="flex text-white">
+    <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p>Export up to 12 reports</p>
+    </div>
+    <div class="flex text-white">
+        <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <p>Bulk reconcile transactions</p>
+    </div>
+    <div class="flex text-white">
+        <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p>Track in multiple currencies</p>
+    </div >
+    <div class="flex text-white">
+    <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <p> Director at Velocity Industries</p>
+        
+           </div>
+           </div>
+           <div class=" h-auto max-w-xl m-4 p-6  ">
+            <p class=" text-white text-4xl font-lg">$39</p> 
+            <p class="text-white mt-4">Enterprise
+        </p>
+        <p class="text-white mt-2">For even the biggest enterprise companies.</p>
+            <div>
+                <button  class="flex justify-center items-center text-center w-full border-2 border-slate-600 p-3 font-semibold mt-4 rounded-full text-white ">Get started</button>
+            </div>
+        
+            <div class="flex text-white mt-4">
+                <svg class= "w-10 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                <p>Send 25 quotes and invoices</p>
+                   
+                </div>
+                <div class="flex text-white">
+                    <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    <p>Connect up to 5 bank accounts</p>
+                </div>
+                <div class="flex text-white">
+        <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p>Track up to 50 expenses per month</p>
+        </div>
+        <div class="flex text-white">
+        <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p>Automated payroll support</p>
+        </div>
+        <div class="flex text-white">
+        <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p>Export up to 12 reports</p>
+        </div>
+        <div class="flex text-white">
+            <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        <p>Bulk reconcile transactions</p>
+        </div>
+        <div class="flex text-white">
+            <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+            <p>Track in multiple currencies</p>
+        </div >
+        <div class="flex text-white">
+        <svg class= "w-10 h-6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                <p> Director at Velocity Industries</p>
+            
+               </div>
+</div>
+    </div>
+</div>
+
+    <div class="   w-full h-auto ">
+        <div class="  mt-20 mx-10 ">
+        <p class=" mt-24  font-bold text-4xl">Frequently asked questions</p>
+        <p class="mt-4 text-gray-500">If you can’t find what you’re looking for, 
+            email our support team and <br>
+            if you’re lucky someone will get back to you.</p> </div>
+
+
+
+
+            <div>
+                <div class="md:flex md:justify-evenly m-4">
+                    <div class="m-4">
+                        <div class="mt-4">
+                   <h2 class="text-lg">Does TaxPal handle VAT?</h2>
+                   <p class="text-slate-500 mt-2">Well no, but if you move your company offshore you can probably ignore it.</p>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="text-lg">Can I pay for my subscription via purchase order?</h2>
+                    <p class="text-slate-500 mt-2">Absolutely, we are happy to take your money in all forms.</p>
+                 </div>
+
+                 <div class="mt-4">
+                    <h2 class="text-lg">How do I apply for a job at TaxPal?</h2>
+                    <p class="text-slate-500 mt-2">We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk</p>
+                 </div>
+                    </div>
+
+                    <div class="mt-4 mr-4">
+                  <div >
+                   <h2 class="text-lg" >What was that testimonial about tax fraud all about?</h2>
+                   <p class="text-slate-500 mt-2">TaxPal is just a software application, ultimately your books are your responsibility.</p>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="text-lg">TaxPal sounds horrible but why do I still feel compelled to purchase?</h2>
+                    <p class="text-slate-500 mt-2">This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.</p>
+                 </div>
+
+                 <div class="mt-4">
+                    <h2 class="text-lg">I found other companies called TaxPal, are you sure you can use this name?</h2>
+                    <p class="text-slate-500 mt-2">Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.</p>
+                 </div>
+
+                    </div>
+                    <div class="mr-4 mt-4">
+                        <div>
+                            <h2 class="text-lg">How do you generate reports?</h2>
+                            <p class="text-slate-500 mt-2">You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
+                         </div>
+         
+                         <div class="mt-4">
+                             <h2 class="text-lg">Can we expect more inventory features?</h2>
+                             <p class="text-slate-500 mt-2">In life it’s really better to never expect anything at all.</p>
+                          </div>
+         
+                          <div class="mt-4">
+                             <h2 class="text-lg">I lost my password, how do I get into my account?</h2>
+                             <p class="text-slate-500 mt-2">Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+
+       
+
+       <div class="flex justify-center items-center text-center mt-24">
+        <div class="w-10 h-10 bg-blue-500 mx-3 rounded-full border-2 border-blue-400" style =" background:linear-gradient(white 40%,rgb(0, 128, 255) 50%);">
+    
+        </div>
+        <p class="text-3xl">Tax<span class="text-blue-400 ">Pal</span></p>
+
+       </div>
+      </div>
+
+      <div class="mt-10">
+        <div class="flex justify-center items-center text-center space-x-10 text-slate-500 ">
+
+           <a herf="#">Features</a>
+           <a herf="#">Testimonials</a>
+           <a herf="#">Pricing</a>
+
+        </div>
+      </div>
+
+      <hr class="mt-10">
+      <footer class="p-10 text-slate-500">
+        Copyright © 2024 TaxPal. All rights reserved.
+      </footer>
+
+      <script src="script.js">
+/* document.addEventListener('DOMContentLoaded', () => {
+    
+   const button=document.querySelector(".btn")
+   const image = document.getElementById('image');
+    const btn= document.querySelector("#reporting");
+    const btn2= document.querySelector("#claim");
+    const btn3=document.querySelector("#payroll");
+    const btn4 = document.querySelector("#vatHandling")
+    
+    
+    btn.addEventListener('click' , ()=>{
+        let imageSrc = btn.getAttribute('data-image')
+           image.src="cash.webp"
+
+
+    })
+
+   btn2.addEventListener('click' , ()=>{
+       let imageSrc = btn2.getAttribute('data-image');
+       image.src = 'expense.webp'
+    })
+
+    btn3.addEventListener('click' , ()=>{
+       let imageSrc = btn3.getAttribute('data-image');
+       image.src = 'payroll.webp'
+    })
+
+
+    btn4.addEventListener('click' , ()=>{
+       let imageSrc = btn4.getAttribute('data-image');
+       image.src = 'vat.webp'
+    })
+   
+   
+});
+*/
+
+      </script>
+    
+</body>
+
+</html
